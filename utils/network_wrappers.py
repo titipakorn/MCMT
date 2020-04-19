@@ -11,23 +11,22 @@
  limitations under the License.
 """
 
+import sklearn
+import mxnet as mx
+import face_align
 import json
 import logging as log
 from collections import namedtuple
 from abc import ABC, abstractmethod
+import sys
+import os
 
 import cv2
 import numpy as np
 
-from utils.ie_tools import load_ie_model
-
 from retinaface import RetinaFace
 
-from .segm_postprocess import postprocess
-
-import face_align
-import mxnet as mx
-import sklearn
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
 
 
 class DetectorInterface(ABC):
