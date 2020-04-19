@@ -28,6 +28,8 @@ from retinaface import RetinaFace
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
 
+sys.path.append(os.path.join(os.path.dirname(__file__),  '..', '..', 'common'))
+
 
 class DetectorInterface(ABC):
     @abstractmethod
