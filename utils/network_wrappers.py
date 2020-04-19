@@ -11,9 +11,10 @@
  limitations under the License.
 """
 
+import face_align
+from retinaface import RetinaFace
 import sklearn
 import mxnet as mx
-import face_align
 import json
 import logging as log
 from collections import namedtuple
@@ -23,8 +24,6 @@ import os
 
 import cv2
 import numpy as np
-
-from retinaface import RetinaFace
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
 

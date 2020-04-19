@@ -23,7 +23,7 @@ import sys
 
 import cv2 as cv
 
-from utils.network_wrappers import Detector, VectorCNN, MaskRCNN, DetectionsFromFileReader
+from utils.network_wrappers import Detector, VectorCNN, DetectionsFromFileReader
 from mc_tracker.mct import MultiCameraTracker
 from utils.analyzer import save_embeddings
 from utils.misc import read_py_config, check_pressed_keys, AverageEstimator, set_log_config
